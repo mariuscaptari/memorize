@@ -15,3 +15,9 @@ struct MemorizeApp: App {
         }
     }
 }
+
+struct MemorizeApp_Previews: PreviewProvider {
+    static var previews: some View {
+        Text("Hello, World!")
+    }
+}
