@@ -20,7 +20,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .foregroundColor(.red)
+            .foregroundColor(.orange)
             Spacer()
             HStack {
                 remove
