@@ -28,38 +28,16 @@ struct ContentView: View {
             .foregroundColor(.orange)
             Spacer()
             HStack {
-                remove
-                Spacer()
                 vehicles
-                animals
                 Spacer()
-                add
-                
+                animals
             }
             .padding(.horizontal)
             .font(.largeTitle)
         }
         .padding(.horizontal)
     }
-    
-    var remove: some View {
-        Button {
-            if emojiCount > 1 {
-                emojiCount -= 1
-            }
-        } label: {
-            Image(systemName: "minus.circle")
-        }
-    }
-    var add: some View {
-        Button {
-            if emojiCount < emojis[selectedTheme]!.count {
-                emojiCount += 1
-            }
-        } label: {
-            Image(systemName: "plus.circle")
-        }
-    }
+
     var vehicles: some View {
         Button {
             if emojiCount > emojis["vehicles"]!.count {
